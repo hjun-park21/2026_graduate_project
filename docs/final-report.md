@@ -295,9 +295,9 @@
 6. Hu, E. J. et al., "LoRA: Low-Rank Adaptation of Large Language Models," *ICLR*, 2022.
 7. Järvelin, K. and Kekäläinen, J., "Cumulated Gain-Based Evaluation of IR Techniques," *ACM Transactions on
    Information Systems*, 20(4), 2002.
-8. SYSTRAN, faster-whisper, https://github.com/SYSTRAN/faster-whisper
-9. JaidedAI, EasyOCR, https://github.com/JaidedAI/EasyOCR
-10. Qdrant, Vector Database, https://qdrant.tech
+8. SYSTRAN, faster-whisper, GitHub repository, 2023.
+9. JaidedAI, EasyOCR, GitHub repository, 2020.
+10. Qdrant, Qdrant Vector Database, 2024.
 
 ---
 
