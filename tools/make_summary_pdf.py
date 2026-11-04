@@ -137,7 +137,7 @@ BODY = """
 <tr class="hl"><td class="c"><b>설명 제외</b></td><td class="r"><b>0.772</b></td><td class="r"><b>0.833</b></td><td class="r"><b>0.660</b></td><td class="r"><b>0.750</b></td><td><b>Gemini 없이 로컬만으로 되나</b></td></tr>
 <tr><td class="c">자막 제외</td><td class="r">0.765</td><td class="r">0.781</td><td class="r">0.630</td><td class="r">0.708</td><td>EasyOCR 이 필요한가</td></tr>
 <tr><td class="c">음성 제외</td><td class="r">0.697</td><td class="r">0.771</td><td class="r">0.561</td><td class="r">0.604</td><td><b>음성이 가장 중요</b></td></tr>
-<tr><td class="c">그림만</td><td class="r">0.470</td><td class="r">0.594</td><td class="r">0.368</td><td class="r">0.292</td><td>무작위(0.480)와 구별 안 됨</td></tr>
+<tr><td class="c">그림만</td><td class="r">0.470</td><td class="r">0.594</td><td class="r">0.368</td><td class="r">0.292</td><td>무작위(0.443)와 구별 안 됨</td></tr>
 </table>
 <p><small><b>설명을 빼면 네 지표가 모두 올라갑니다</b> — nDCG +0.026 · Recall +0.031 ·
 mAP +0.039 · 1위적중 +0.062. 한 지표만 좋아졌다면 지표 선택의 문제일 수 있지만,
@@ -149,7 +149,7 @@ mAP +0.039 · 1위적중 +0.062. 한 지표만 좋아졌다면 지표 선택의 
 평균만 봤다면 "신호를 섞어도 별 차이 없다" 는 잘못된 결론에 갔을 것입니다.
 </div>
 <div class="note">
-<b>SigLIP 단독은 무작위와 구별되지 않습니다</b>(0.470 vs 무작위 0.480).
+<b>SigLIP 단독은 무작위와 구별되지 않습니다</b>(0.470 vs 무작위 0.443, 95% 범위 0.366~0.523).
 같은 영상의 카드끼리는 그림이 서로 비슷해 변별이 안 됩니다. 다만 다른 신호와 함께일
 때는 짝지어 뺄 때마다 4/4 모두 떨어져, 보조 신호로는 일관되게 기여합니다.
 </div>
