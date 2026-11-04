@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 """마크다운 문서를 한글(.hwp) 로 뽑습니다. 담당 D.
 
-    python -m tools.md_to_hwp docs/mentoring-3.md
-    python -m tools.md_to_hwp docs/mentoring-3.md --out docs/mentoring-3.hwp
+    python -m tools.md_to_hwp docs/eval-guide.md
+    python -m tools.md_to_hwp docs/eval-guide.md --out eval-guide.hwp
+
+⚠ **제출용으로는 쓰지 마세요.** 한글의 HTML 가져오기가 문단 간격과 표 모양을 많이 잃어,
+표 밑에 문단이 바로 붙는 등 모양이 거칩니다. 3차 멘토링 자료는 이 도구로 만들었다가
+그 문제로 `tools/make_mentoring_hwp.py`(한글 서식을 직접 지정)로 다시 만들었습니다.
+내용을 한글로 빨리 옮겨 손으로 다듬을 때만 쓰세요.
 
 `.hwp` 는 공개 규격이 아니라 **파이썬으로 직접 쓸 수 없습니다.** 그래서 이 도구는
 설치된 한컴오피스를 COM 으로 불러, `md_to_pdf` 가 만드는 것과 **같은 HTML** 을 열게 한 뒤

@@ -13,7 +13,8 @@
   `docs/fixes-20261010.md`(동현) · `SigLIP2_실험기록_20260914.md` · `docs/mentor-feedback.md`
 - 제출용: `docs/summary.pdf`(4쪽 요약) · `docs/plan-and-roles.pdf`(일정표·역할분담표)
   · `docs/progress-full.pdf`(통합본 전체)
-  · `docs/mentoring-3.md` → `mentoring-3.pdf` · `mentoring-3.hwp` (2차 자문 회신)
+  · `docs/mentoring-3.hwp` · `mentoring-3.pdf` (3차 멘토링 = 2차 자문 회신, 원본은
+  `tools/make_mentoring_hwp.py` 안의 내용. 한글로 먼저 짜고 한글이 PDF 로 저장)
   ⚠ 수치를 고치면 `PROGRESS.md` 와 `tools/make_summary_pdf.py` 를 **같이** 고칠 것
 - ⚠ 낡은 문서와 역할이 끝난 일회성 자료는 `docs/archive/` 로 옮겼습니다.
   **지금 상황을 알려면 쓰지 마세요.** 이유는 그 폴더 README 에 있습니다
@@ -68,7 +69,8 @@ python -m tools.make_user_study_pdf   # 사용자 평가 인쇄물 (안내서 + 
 python -m tools.make_plan_pdf         # 추진 일정표·역할 분담표 PDF
 python -m tools.make_summary_pdf      # 제출용 요약 PDF 4쪽
 python -m tools.md_to_pdf docs/PROGRESS.md --out docs/progress-full.pdf   # md → PDF
-python -m tools.md_to_hwp docs/mentoring-3.md --out docs/mentoring-3.hwp   # md → 한글(한컴 필요)
+python -m tools.make_mentoring_hwp   # 3차 멘토링 한글+PDF (한컴 필요, 서식 직접 지정)
+python -m tools.md_to_hwp docs/eval-guide.md   # md → 한글 대충 옮기기 (서식은 거칠다)
 ```
 
 ## 코드 스타일
